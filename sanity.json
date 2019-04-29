@@ -18,6 +18,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "components/cLogo.js"
     }
   ]
 }
