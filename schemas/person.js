@@ -1,6 +1,6 @@
 export default {
-  name: 'author',
-  title: 'Author',
+  name: 'person',
+  title: 'Person',
   type: 'document',
   fields: [
     {
@@ -16,6 +16,11 @@ export default {
         source: 'name',
         maxLength: 96
       }
+    },
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     },
     {
       name: 'image',
