@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-  - '10'
-
+- '10'
 before_script:
-  - npm install -g @sanity/cli
-
+- npm install -g @sanity/cli
 script:
-  - sanity build
+- sanity build
+env:
+  global:
+    secure: usF24MjSpA6m9i62YNZ2XgpOp9iNBqrqRuv233sxGkL+zOEaYN9z2FPt2Cbaokdj4sxlagx3HpgyF4lsp86vnT2Td8CEt9dt1PqoQWZuevsg0ICv0Qluq2nPWzy+pWfDDnQW9hcRu9kbSSQDnm4DlfHHf9yjhmMoyxIqdMUfWMK3Afd7iKONszUu7rrRz4EB2VWBmm2lMzFn79UwAyH/SxY9YlB8sF6HcqN3XIrgd8g3klAWP3jJJs+oe73vf+1nOjiJAsRYQKCa1ZOUkk9aCGwC83IjrAjw5z0i8G/TxxgKCbJWl86HOyb5wrt7DHBOVCUBkXc3KQRaz26ByQObtbeCXBSD0LefSmDVYYg/oqMhS0Ymd2eRNH/UQJ/zIyOOOmeW9+2/aNuQ5ZyXEHd6wQavUsjikPWWRMYUHWsh/N77k3S6nicnTwv3mC9HDej3mYC+Vr2bVE57seSwMrP+3Up+Jqsy/uoAT8V0qk5N5hWG+eIJgp1Lca2Pz7ADuXz75w/AFTl4Nsy7xirZXifdUB6mOdtZavq0GdAwzlWqMO5/jZEfpFJ32wMw2vQy8Js61blQ3nSjHep2fgpI0ex0GTBeaJX4FjjhwC2ZT0YNRlm+PMisdUid4wJ+inFuSsoac1f2HqhyfyFRh0H8mIqnSwSZpLdgX6R5GyefH3CX1uw=
