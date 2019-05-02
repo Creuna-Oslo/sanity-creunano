@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'article',
+  title: 'Article',
   type: 'document',
   fields: [
     {
@@ -21,7 +21,7 @@ export default {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'}
+      to: {type: 'person'}
     },
     {
       name: 'mainImage',
@@ -52,7 +52,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
+      author: 'person.name',
       media: 'mainImage'
     },
     prepare(selection) {
