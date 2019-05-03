@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '10'
+before_script:
+- npm install -g @sanity/cli
+script:
+- sanity build
+- SANITY_AUTH_TOKEN=$DEPLOY_TOKEN sanity deploy
+env:
+  global:
+    secure: sIdGIP5SvSqrbSF1bvyRjtRwQIeJKGzgqs+kbxOERh/TSPOW4D1qoNc8pFnf1dDKAnXInu4f9rl7ZrlExuiMEJaYTUY7AcysQvbxXSeHC01mrV2TME0Rg9zF1GWMOikbNssuti98+/tQVpbcDztOWuyC4ry+Hd9FRzqqA3Ii09GxuxrLye6DVc9l8vuwI8/25EN7tiIKdPEpTt8QsplWkwAsSZB7lBWr0gq35GT/aiL02OJ9cP8GF+QRqgAnrFpxTdSCu5qZGr07NVJorALggogaPcA0JTiiqxbpksSe7+ZoM/t0a0YTkExDQ7jEAaVGUvi97qX3fqqulseWh3pFmCew1zOmFhKWPV6qOojaBDvLseUT6l2sISmySFflCSzSXYfZZZ8H8OjwlQgVIHeT2auHUxuUtKyGoTDcqjSk2op5r5ghUOawMOFMpOtLza8/ABR1NKQb/b28Jbl97BLPy6gwfP0O3PApjc46oZyU0ftxX58CTCgueprlIm/utQVi+fv4aDE19Gj73aByL/qoCZ+JK5I5zl8n5qlUj9/6s0xAeSme9OSmGI8V9ZVDUepMMCKVW+YrpxB5T+XGLeG+PTilUShH2Ji5zRzr1/vAb33ox/JsZ4wO4oYngpAkTmve1/Acjxj3F2lrLhRwMz/2O+kIzqRQvHBEO9ryXWOy95o=

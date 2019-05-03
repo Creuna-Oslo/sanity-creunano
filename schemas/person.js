@@ -1,6 +1,6 @@
 export default {
-  name: 'author',
-  title: 'Author',
+  name: 'person',
+  title: 'Person',
   type: 'document',
   fields: [
     {
@@ -14,8 +14,13 @@ export default {
       type: 'slug',
       options: {
         source: 'name',
-        maxLength: 96
+        maxLength: 172
       }
+    },
+    {
+      name: 'title',
+      title: 'Title',
+      type: 'string',
     },
     {
       name: 'image',
