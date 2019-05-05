@@ -9,6 +9,11 @@ export default {
       type: 'string'
     },
     {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string'
+    },
+      {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -46,6 +51,11 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent'
+    },
+    {
+      name: 'externalLink',
+      title: 'External Link',
+      type: 'url'
     }
   ],
 
