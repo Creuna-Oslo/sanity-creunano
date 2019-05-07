@@ -18,6 +18,16 @@ export default {
       }
     },
     {
+      name: 'email',
+      title: 'Email address',
+      type: 'string',
+    },
+    {
+      name: 'phone',
+      title: 'Phone no',
+      type: 'string',
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
