@@ -9,6 +9,16 @@ export default {
       type: 'string'
     },
     {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string'
+    },
+    {
+      name: 'externalLink',
+      title: 'ExteranLink',
+      type: 'url'
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
