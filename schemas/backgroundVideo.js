@@ -1,8 +1,13 @@
 export default {
   name: 'backgroundVideo',
   title: 'Background video',
-  type: 'file',
+  type: 'document',
   fields: [
+    {
+      name: 'video',
+      type: 'file',
+      title: 'Video file'
+    },
     {
       name: 'description',
       type: 'string',
