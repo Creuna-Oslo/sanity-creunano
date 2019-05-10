@@ -28,6 +28,10 @@ export default {
       type: 'string',
     },
     {
+      name: 'public',
+      title: 'Public',
+      type: 'boolean',
+    },    {
       name: 'title',
       title: 'Title',
       type: 'string',
