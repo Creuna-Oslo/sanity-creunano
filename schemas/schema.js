@@ -8,10 +8,10 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import category from './category'
 import article from './article'
+import project from './case'
 import jobAd from './jobAd'
 import backgroundVideo from './backgroundVideo'
 import person from './person'
-
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -22,6 +22,7 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     article,
+    project,
     person,
     jobAd,
     backgroundVideo,
