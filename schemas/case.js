@@ -1,6 +1,6 @@
 export default {
-  name: 'Cases',
-  title: 'cases',
+  name: 'case',
+  title: 'Case',
   type: 'document',
   fields: [
     {
