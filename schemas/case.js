@@ -14,6 +14,14 @@ export default {
       type: 'string'
     },
     {
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'image',
+      options: {
+        hotspot: true
+      }
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -36,14 +44,28 @@ export default {
     {
       name: 'people',
       title: 'People',
-      type: 'reference',
-      to: [{type: 'person'}],
-      description: 'Who worked on the project?'
-    },
+      description: 'Who worked on the project?',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'person'}}]
+     },
     {
       name: 'body',
       title: 'Body',
       type: 'blockContent'
     }
-  ]
+  ],
+      preview: {
+      select: {
+      title: 'title',
+      customer: 'customer.name',
+      media: 'mainImage'
+    },
+    prepare(selection) {
+      const {customer} = selection
+      return Object.assign({}, selection, {
+        subtitle: customer && `With ${customer}`
+      })
+    }
+  }
+
 }
