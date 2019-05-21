@@ -1004,6 +1004,10 @@
     rxjs "^6.1.0"
     shallow-equals "^1.0.0"
 
+"@sanity/production-preview@^0.140.0":
+  version "0.140.0"
+  resolved "https://registry.npmjs.org/@sanity/production-preview/-/production-preview-0.140.0.tgz#d700ded048c6eb5374babcf412f5020bfc284b37"
+
 "@sanity/resolver@0.140.3":
   version "0.140.3"
   resolved "https://registry.npmjs.org/@sanity/resolver/-/resolver-0.140.3.tgz#c1bb3f5dee4151731035a2090989d61f88baf117"
